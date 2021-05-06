@@ -6,7 +6,7 @@ function App() {
       id: 'e1',
       title: 'Car Insurance 1',
       amount: 31.83,
-      date: new Date(2021, 2, 21),
+      date: new Date(2021, 1, 21),
     },
     {
       id: 'e2',
@@ -18,19 +18,19 @@ function App() {
       id: 'e3',
       title: 'Car Insurance 3',
       amount: 33.83,
-      date: new Date(2021, 2, 23),
+      date: new Date(2021, 3, 23),
     },
     {
       id: 'e4',
       title: 'Car Insurance 4',
       amount: 34.83,
-      date: new Date(2021, 2, 24),
+      date: new Date(2021, 4, 24),
     },
     {
       id: 'e5',
       title: 'Car Insurance 5',
       amount: 35.83,
-      date: new Date(2021, 2, 25),
+      date: new Date(2021, 5, 25),
     },
   ];
 
