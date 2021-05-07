@@ -15,15 +15,20 @@ const Expenses = ({ items }) => {
     ({ date }) => date.getFullYear() === +filteredYear,
   );
 
+  let expensesContent = <p>No Expenses found.</p>;
+  if (filteredItems.length > 0) {
+    expensesContent = filteredItems.map(({ id, title, amount, date }) => (
+      <ExpenseItem key={id} title={title} amount={amount} date={date} />
+    ));
+  }
+
   return (
     <Card className="expenses">
       <ExpensesFilter
         selected={filteredYear}
         onChangeFilter={selectYearHandler}
       />
-      {filteredItems.map(({ id, title, amount, date }) => (
-        <ExpenseItem key={id} title={title} amount={amount} date={date} />
-      ))}
+      {expensesContent}
     </Card>
   );
 };
